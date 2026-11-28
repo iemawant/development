@@ -1,78 +1,25 @@
 <!doctype html>
 <html lang="fa" dir="rtl">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#10251f">
-  <title>رایکا | مطالعه موردی راژ</title>
-  <style>
-    :root{color-scheme:light;--ink:#17251f;--muted:#68776f;--line:#e4eae6;--paper:#fff;--bg:#f1f5f2;--brand:#17634d;--soft:#eaf4ee;--warn:#fff5df}
-    *{box-sizing:border-box}body{margin:0;background:var(--bg);font-family:Tahoma,"Segoe UI",sans-serif;color:var(--ink);line-height:1.9}
-    .shell{width:min(100%,560px);margin:0 auto;background:var(--paper);min-height:100vh;box-shadow:0 12px 48px #14251d12}
-    header{padding:18px 22px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between}
-    .brand{font-weight:900;letter-spacing:.02em}.brand span{color:var(--brand)}.tag{font-size:11px;color:var(--brand);background:var(--soft);padding:4px 10px;border-radius:99px}
-    main{padding:26px 22px 42px}.eyebrow{font-size:12px;color:var(--brand);font-weight:800}
-    h1{font-size:26px;line-height:1.65;margin:8px 0 12px}h2{font-size:18px;margin:0 0 10px}
-    p{margin:0;color:var(--muted);font-size:14px}.panel{border:1px solid var(--line);border-radius:18px;padding:18px;margin-top:16px}
-    .grid{display:grid;gap:9px;margin-top:12px}.item{background:#f6f9f7;border-radius:12px;padding:11px 13px;font-size:13px}
-    .status{font-size:11px;color:#805a16;background:var(--warn);padding:12px 13px;border-radius:12px;margin-top:14px}
-    .actions{display:grid;gap:10px;margin-top:14px}.action{display:block;text-align:center;padding:12px 16px;border-radius:12px;font-weight:800;font-size:14px;text-decoration:none}
-    .primary{background:var(--brand);color:white}.secondary{border:1px solid var(--line);color:var(--ink);background:white}
-    .pending{opacity:.55;cursor:not-allowed;background:#f4f6f4;color:#78847d;border:1px dashed #cbd5ce}
-    .qr{margin-top:12px;min-height:150px;border:1.5px dashed #bdc9c1;border-radius:14px;display:grid;place-content:center;text-align:center;padding:18px;background:#fafcfb}
-    .qr-mark{font-size:36px;color:#9aa99f}.qr small{color:var(--muted);font-size:11px}
-    footer{padding:18px 22px;border-top:1px solid var(--line);font-size:11px;color:var(--muted)}
-    a:focus-visible{outline:3px solid #d39b32;outline-offset:3px}
-  </style>
-</head>
-<body>
-<div class="shell">
-  <header><div class="brand">RAJ <span>/ راژ</span></div><span class="tag">پیش‌نمایش داخلی · نسخه اولیه</span></header>
-  <main>
-    <div class="eyebrow">مطالعه موردی · رایکا</div>
-    <h1>تجربه دیجیتال رایکا</h1>
-    <p>این صفحه چارچوب اولیه مطالعه موردی است. شرح مسئله، تحویل راژ و مسیر منو باید پس از دریافت شواهد معتبر تکمیل شوند.</p>
-
-    <section class="panel">
-      <h2>مسئله و نیاز رایکا</h2>
-      <p>شرح مسئله واقعی هنوز از منبع تأییدشده دریافت نشده است؛ برای جلوگیری از ادعای نادرست، متن نهایی در این بخش درج نشده.</p>
-    </section>
-
-    <section class="panel">
-      <h2>آنچه راژ تحویل داده است</h2>
-      <div class="grid">
-        <div class="item">خروجی و محدوده تحویل اول — نیازمند تأیید</div>
-        <div class="item">خروجی و محدوده تحویل دوم — نیازمند تأیید</div>
-        <div class="item">خروجی و محدوده تحویل سوم — نیازمند تأیید</div>
-      </div>
-    </section>
-
-    <section class="panel">
-      <h2>سایت رایکا</h2>
-      <p>این آدرس را کاربر ارائه کرده است. تلاش ما برای واکشی صفحه ناموفق بود؛ بنابراین مقصد از سمت ما تست نشده است.</p>
-      <div class="actions">
-        <a class="action primary" href="https://raikamenu.ir/" target="_blank" rel="noopener noreferrer">باز کردن وب‌سایت رایکا</a>
-      </div>
-      <div class="status">توجه: این لینک صفحه اصلی اعلام‌شده است، نه لینک تأییدشده منوی QR.</div>
-    </section>
-
-    <section class="panel">
-      <h2>مسیر QR تا منوی واقعی</h2>
-      <p>QR اصلی یا URL مقصد آن هنوز در اختیار تیم اجرا قرار نگرفته است.</p>
-      <div class="qr"><div class="qr-mark">▦</div><strong>شاهد QR در انتظار دریافت</strong><small>این جایگاه صرفاً نشانه‌گذار است و QR قابل اسکن نیست.</small></div>
-      <div class="actions">
-        <span class="action pending" aria-disabled="true">مشاهده منوی واقعی · مقصد دریافت نشده</span>
-        <span class="action pending" aria-disabled="true">تماس با رایکا · شماره تأیید نشده</span>
-      </div>
-    </section>
-
-    <section class="panel">
-      <h2>درخواست راهکار مشابه</h2>
-      <p>مقصد واقعی فرم یا راه ارتباطی راژ هنوز تأیید نشده است.</p>
-      <div class="actions"><span class="action pending" aria-disabled="true">درخواست مشاوره · مقصد در انتظار تأیید</span></div>
-    </section>
-  </main>
-  <footer>پیش‌نمایش داخلی و غیرنهایی · اطلاعات پروژه و CTAهای منو/تماس هنوز تأیید نشده‌اند · این فایل روی سایت Production منتشر نشده است.</footer>
-</div>
-</body>
-</html>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#123d31">
+<title>رایکا | مطالعه موردی راژ</title>
+<style>
+:root{--ink:#172820;--muted:#627168;--line:#e4ebe6;--green:#17634d;--pale:#edf5f0;--bg:#f3f6f3}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:Tahoma,"Segoe UI",sans-serif;line-height:1.9}
+.shell{max-width:560px;min-height:100vh;margin:auto;background:#fff;box-shadow:0 12px 48px #14251d12}
+header{padding:17px 22px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center}.brand{font-weight:900}.brand b{color:var(--green)}.tag{font-size:11px;background:var(--pale);color:var(--green);padding:4px 10px;border-radius:30px}
+main{padding:25px 21px 40px}.eyebrow{font-size:12px;color:var(--green);font-weight:bold}h1{font-size:25px;line-height:1.6;margin:7px 0 12px}h2{font-size:17px;margin:0 0 9px}p{font-size:14px;color:var(--muted);margin:0}.panel{border:1px solid var(--line);border-radius:17px;padding:17px;margin-top:15px}.chips{display:grid;gap:8px;margin-top:12px}.chip{background:#f5f8f6;border-radius:11px;padding:10px 12px;font-size:13px}.qr-wrap{display:grid;place-items:center;background:#fafcfb;border:1px dashed #cbd8cf;border-radius:15px;padding:15px;margin-top:12px}.qr-wrap img{width:min(100%,250px);height:auto;image-rendering:pixelated}.qr-wrap small{color:var(--muted);font-size:11px;text-align:center}.actions{display:grid;gap:9px;margin-top:13px}.btn{display:block;text-align:center;padding:12px 15px;border-radius:12px;text-decoration:none;font-weight:bold;font-size:14px}.primary{background:var(--green);color:#fff}.outline{border:1px solid var(--line);color:var(--ink)}.note{font-size:11px;color:var(--muted);margin-top:9px}footer{padding:17px 21px;border-top:1px solid var(--line);font-size:11px;color:var(--muted)}
+</style></head>
+<body><div class="shell">
+<header><div class="brand">RAJ <b>/ راژ</b></div><span class="tag">پایلوت مطالعه موردی</span></header>
+<main>
+<div class="eyebrow">پروژه واقعی · کافه رایکا</div>
+<h1>منوی دیجیتال؛ بدون چاپ دوباره برای هر تغییر</h1>
+<p>رایکا کافه‌ای تازه‌تأسیس بود که تغییرهای مداوم منوی کاغذی، آن را ناچار به چاپ مجدد می‌کرد. راهکار این پروژه، جایگزینی تجربه منوی کاغذی با منوی دیجیتال در دسترس از طریق QR بود.</p>
+<section class="panel"><h2>مسئله چه بود؟</h2><p>هر بار تغییر قیمت یا آیتم، به اصلاح و چاپ دوباره منو نیاز داشت؛ فرآیندی تکراری که به‌روزرسانی منو را دشوار می‌کرد.</p></section>
+<section class="panel"><h2>راهکار اجراشده</h2><div class="chips"><div class="chip">دسترسی به منوی دیجیتال رایکا از طریق QR</div><div class="chip">امکان مشاهده منو با بازکردن لینک در تلفن همراه</div><div class="chip">حذف نیاز به چاپ مجدد نسخه کاغذی برای هر تغییر منو</div></div><p class="note">شرح بالا بر اساس توضیح کارفرماست؛ جزئیات فنی/خدمات دیگری به پروژه نسبت داده نشده است.</p></section>
+<section class="panel"><h2>مسیر QR تا منوی واقعی</h2><p>کد زیر همان تصویر QR ارائه‌شده در مخزن پروژه است. آن را با دوربین تلفن همراه اسکن کنید.</p><div class="qr-wrap"><img src="../../raika-qr-image.jpg" alt="QR ارائه‌شده برای منوی دیجیتال رایکا"><small>تصویر QR دریافت‌شده از مخزن پروژه</small></div><div class="actions"><a class="btn primary" href="https://raikamenu.ir/" target="_blank" rel="noopener noreferrer">مشاهده منوی دیجیتال رایکا</a></div><p class="note">طبق توضیح کارفرما، سایت تک‌صفحه‌ای است و همین نشانی صفحه منو نیز محسوب می‌شود.</p></section>
+<section class="panel"><h2>ارتباط با کافه رایکا</h2><p>برای تماس مستقیم با کافه:</p><div class="actions"><a class="btn outline" href="tel:+989378838757" dir="ltr">تماس با رایکا · ۰۹۳۷۸۸۳۸۷۵۷</a></div></section>
+<section class="panel"><h2>راهکار مشابه برای کسب‌وکار شما؟</h2><p>برای بررسی نیاز کسب‌وکار و دریافت راهکار از تیم راژ، از مسیر ارتباطی رسمی استفاده کنید.</p><div class="actions"><a class="btn primary" href="https://rajtm.ir/contact.html" target="_blank" rel="noopener noreferrer">ارتباط با راژ</a><a class="btn outline" href="https://rajtm.ir/case-studies/raika.html" target="_blank" rel="noopener noreferrer">مطالعه کیس‌استادی رایکا</a></div></section>
+</main><footer>پیش‌نمایش داخلی Task 8 · شماره تماس و مقصدها بر اساس اطلاعات ارائه‌شده توسط کارفرما درج شده‌اند. پیش از انتشار عمومی، QR و پیوندها روی موبایل تست و تصویر نهایی به تأیید آرشیا برسد.</footer>
+</div></body></html>
