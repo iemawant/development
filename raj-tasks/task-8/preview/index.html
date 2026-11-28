@@ -3,66 +3,76 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#101827">
-  <title>پایلوت رایکا | پیش‌نمایش موبایل راژ</title>
+  <meta name="theme-color" content="#10251f">
+  <title>رایکا | مطالعه موردی راژ</title>
   <style>
-    :root{color-scheme:light;--ink:#142033;--muted:#657286;--line:#e4e9f0;--paper:#fff;--bg:#f2f5f9;--brand:#145b50;--brand2:#e5f3ef}
+    :root{color-scheme:light;--ink:#17251f;--muted:#68776f;--line:#e4eae6;--paper:#fff;--bg:#f1f5f2;--brand:#17634d;--soft:#eaf4ee;--warn:#fff5df}
     *{box-sizing:border-box}body{margin:0;background:var(--bg);font-family:Tahoma,"Segoe UI",sans-serif;color:var(--ink);line-height:1.9}
-    .shell{width:min(100%,520px);margin:0 auto;background:var(--paper);min-height:100vh;box-shadow:0 0 40px #14203312}
-    header{padding:18px 20px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between}
-    .brand{font-weight:800;letter-spacing:.02em}.tag{font-size:11px;color:var(--brand);background:var(--brand2);padding:3px 9px;border-radius:99px}
-    main{padding:22px 20px 40px}.eyebrow{font-size:12px;color:var(--brand);font-weight:700}
-    h1{font-size:25px;line-height:1.65;margin:8px 0 12px}h2{font-size:18px;margin:0 0 10px}
-    p{margin:0;color:var(--muted);font-size:14px}.panel{border:1px solid var(--line);border-radius:18px;padding:17px;margin-top:16px}
-    .deliveries{display:grid;gap:9px;margin-top:12px}.delivery{background:#f7f9fb;border-radius:12px;padding:10px 12px;font-size:13px}
-    .qr{margin-top:12px;min-height:170px;border:1.5px dashed #b9c7d2;border-radius:14px;display:grid;place-content:center;text-align:center;padding:18px;background:#fafcfd}
-    .qr-mark{font-size:38px;color:#9aa8b5}.qr small{color:var(--muted);font-size:11px}
-    .actions{display:grid;gap:10px;margin-top:14px}.action{display:block;text-align:center;padding:12px 16px;border-radius:12px;font-weight:700;font-size:14px;text-decoration:none}
+    .shell{width:min(100%,560px);margin:0 auto;background:var(--paper);min-height:100vh;box-shadow:0 12px 48px #14251d12}
+    header{padding:18px 22px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between}
+    .brand{font-weight:900;letter-spacing:.02em}.brand span{color:var(--brand)}.tag{font-size:11px;color:var(--brand);background:var(--soft);padding:4px 10px;border-radius:99px}
+    main{padding:26px 22px 42px}.eyebrow{font-size:12px;color:var(--brand);font-weight:800}
+    h1{font-size:26px;line-height:1.65;margin:8px 0 12px}h2{font-size:18px;margin:0 0 10px}
+    p{margin:0;color:var(--muted);font-size:14px}.panel{border:1px solid var(--line);border-radius:18px;padding:18px;margin-top:16px}
+    .grid{display:grid;gap:9px;margin-top:12px}.item{background:#f6f9f7;border-radius:12px;padding:11px 13px;font-size:13px}
+    .status{font-size:11px;color:#805a16;background:var(--warn);padding:12px 13px;border-radius:12px;margin-top:14px}
+    .actions{display:grid;gap:10px;margin-top:14px}.action{display:block;text-align:center;padding:12px 16px;border-radius:12px;font-weight:800;font-size:14px;text-decoration:none}
     .primary{background:var(--brand);color:white}.secondary{border:1px solid var(--line);color:var(--ink);background:white}
-    .pending{opacity:.5;pointer-events:none}.note{font-size:11px;color:#8a5b16;background:#fff7e8;padding:10px 12px;border-radius:10px;margin-top:14px}
-    footer{padding:18px 20px;border-top:1px solid var(--line);font-size:11px;color:var(--muted)}
+    .pending{opacity:.55;cursor:not-allowed;background:#f4f6f4;color:#78847d;border:1px dashed #cbd5ce}
+    .qr{margin-top:12px;min-height:150px;border:1.5px dashed #bdc9c1;border-radius:14px;display:grid;place-content:center;text-align:center;padding:18px;background:#fafcfb}
+    .qr-mark{font-size:36px;color:#9aa99f}.qr small{color:var(--muted);font-size:11px}
+    footer{padding:18px 22px;border-top:1px solid var(--line);font-size:11px;color:var(--muted)}
+    a:focus-visible{outline:3px solid #d39b32;outline-offset:3px}
   </style>
 </head>
 <body>
 <div class="shell">
-  <header><div class="brand">RAJ <span style="color:var(--brand)">/ راژ</span></div><span class="tag">پیش‌نمایش آزمایشی</span></header>
+  <header><div class="brand">RAJ <span>/ راژ</span></div><span class="tag">پیش‌نمایش داخلی · نسخه اولیه</span></header>
   <main>
     <div class="eyebrow">مطالعه موردی · رایکا</div>
-    <h1>راهکار دیجیتال رایکا؛ از QR تا منوی واقعی</h1>
-    <p>این متن ساختاری اولیه است. خلاصه مسئله و شرح تحویل باید با اطلاعات تأییدشده پروژه جایگزین شود.</p>
+    <h1>تجربه دیجیتال رایکا</h1>
+    <p>این صفحه چارچوب اولیه مطالعه موردی است. شرح مسئله، تحویل راژ و مسیر منو باید پس از دریافت شواهد معتبر تکمیل شوند.</p>
 
     <section class="panel">
-      <h2>مسئله چه بود؟</h2>
-      <p>در انتظار شرح مسئله واقعی و تأییدشده رایکا.</p>
+      <h2>مسئله و نیاز رایکا</h2>
+      <p>شرح مسئله واقعی هنوز از منبع تأییدشده دریافت نشده است؛ برای جلوگیری از ادعای نادرست، متن نهایی در این بخش درج نشده.</p>
     </section>
 
     <section class="panel">
-      <h2>راژ چه چیزی تحویل داد؟</h2>
-      <div class="deliveries">
-        <div class="delivery">مورد تحویل اول — در انتظار تأیید</div>
-        <div class="delivery">مورد تحویل دوم — در انتظار تأیید</div>
-        <div class="delivery">مورد تحویل سوم — در انتظار تأیید</div>
+      <h2>آنچه راژ تحویل داده است</h2>
+      <div class="grid">
+        <div class="item">خروجی و محدوده تحویل اول — نیازمند تأیید</div>
+        <div class="item">خروجی و محدوده تحویل دوم — نیازمند تأیید</div>
+        <div class="item">خروجی و محدوده تحویل سوم — نیازمند تأیید</div>
       </div>
     </section>
 
     <section class="panel">
-      <h2>مسیر QR تا منو</h2>
-      <p>شاهد QR واقعی و مقصد منو باید از مالک پروژه دریافت شود.</p>
-      <div class="qr"><div class="qr-mark">▦</div><strong>QR واقعی هنوز ثبت نشده</strong><small>این جایگاه نمونه QR نیست و قابل اسکن نیست.</small></div>
+      <h2>سایت رایکا</h2>
+      <p>این آدرس را کاربر ارائه کرده است. تلاش ما برای واکشی صفحه ناموفق بود؛ بنابراین مقصد از سمت ما تست نشده است.</p>
       <div class="actions">
-        <a class="action primary pending" aria-disabled="true">مشاهده منوی واقعی · لینک در انتظار تأیید</a>
-        <a class="action secondary pending" aria-disabled="true">تماس با رایکا · شماره در انتظار تأیید</a>
+        <a class="action primary" href="https://raikamenu.ir/" target="_blank" rel="noopener noreferrer">باز کردن وب‌سایت رایکا</a>
       </div>
-      <div class="note">برای جلوگیری از هدایت اشتباه، دکمه‌ها تا دریافت URL منو و شماره تماس واقعی غیرفعال هستند.</div>
+      <div class="status">توجه: این لینک صفحه اصلی اعلام‌شده است، نه لینک تأییدشده منوی QR.</div>
     </section>
 
     <section class="panel">
-      <h2>راهکار مشابه برای کسب‌وکار شما</h2>
-      <p>مقصد واقعی فرم یا مسیر تماس راژ پس از تأیید مالک اینجا قرار می‌گیرد.</p>
-      <div class="actions"><a class="action secondary pending" aria-disabled="true">درخواست مشاوره · مقصد در انتظار تأیید</a></div>
+      <h2>مسیر QR تا منوی واقعی</h2>
+      <p>QR اصلی یا URL مقصد آن هنوز در اختیار تیم اجرا قرار نگرفته است.</p>
+      <div class="qr"><div class="qr-mark">▦</div><strong>شاهد QR در انتظار دریافت</strong><small>این جایگاه صرفاً نشانه‌گذار است و QR قابل اسکن نیست.</small></div>
+      <div class="actions">
+        <span class="action pending" aria-disabled="true">مشاهده منوی واقعی · مقصد دریافت نشده</span>
+        <span class="action pending" aria-disabled="true">تماس با رایکا · شماره تأیید نشده</span>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>درخواست راهکار مشابه</h2>
+      <p>مقصد واقعی فرم یا راه ارتباطی راژ هنوز تأیید نشده است.</p>
+      <div class="actions"><span class="action pending" aria-disabled="true">درخواست مشاوره · مقصد در انتظار تأیید</span></div>
     </section>
   </main>
-  <footer>نسخه آزمایشی داخلی · داده‌های پروژه و مقصد CTAها هنوز تأیید نشده‌اند · انتشار عمومی مجاز نیست.</footer>
+  <footer>پیش‌نمایش داخلی و غیرنهایی · اطلاعات پروژه و CTAهای منو/تماس هنوز تأیید نشده‌اند · این فایل روی سایت Production منتشر نشده است.</footer>
 </div>
 </body>
 </html>
